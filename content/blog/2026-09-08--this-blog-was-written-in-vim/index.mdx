@@ -1,0 +1,78 @@
+---
+title: "This Blog Was Written in Vim"
+slug: "this-blog-was-written-in-vim"
+description: "A quick note about writing this blog post in Vim."
+date: 2026-09-08
+lastUpdated: 2026-09-08
+tags:
+    - General
+    - Coding
+---
+
+## Filler
+For the uninitiated, Vim is a configurable text editor (like Notepad or
+TextEdit on Mac). It's most commonly used as a code editor similar to VSCode or
+Rider.  The main difference is how you use it: Vim is a terminal application
+that is fully reliant on your keyboard, which makes it very efficient!
+
+![Vim Screenshot](/vim.png)
+
+**Figure: Vim in a Ghostty instance, using herdr**
+
+## Why on earth????
+Honestly, I don't have a valid answer. I just genuinely thought it would be fun
+and a great exercise for learning Vim :)
+
+
+One of my coworkers, [Brook Jeynes](https://brookjeynes.dev/), kindly spent
+about two hours on a Teams call with me, helping me setup Vim alongside all the
+necessary plugins for programming (like an LSP, Syntax Highlighting etc).
+
+I've been wanting to learn Vim for a long time. Lately, VSCode has become a
+massive headache with all the new copilot features and AI autocomplete that I
+just don't find useful, LLMs can be great, but when the features are stuffed
+down your throat, it feels exhausting. Maybe Vim is the nuclear option, or
+maybe the perfect cure =)
+
+## Config
+
+Vim uses a file called ``vimrc`` as its main configuration. Brook was kind
+enough to donate his for me to modify to my liking.
+
+### Packages
+- Git: [Vim Fugitive](https://github.com/tpope/vim-fugitive)
+- Language Server: [Vim LSP](prabirshrestha/vim-lsp)
+- Autocomplete: [AsyncComplete](prabirshrestha/asyncomplete.vim)
+
+### Boilerplate
+```bash
+set nonumber
+set signcolumn=yes
+set colorcolumn=80
+set showtabline=1
+set nowrap
+set notermguicolors
+set background=light
+colorscheme desert
+set nocursorcolumn
+```                  
+
+This is just some basic formatting, like removing line numbers (weird),
+disabling text wrap, removing cursor column, and setting our theme!
+
+You will DEFINITELY want to configure some keybinds though....
+
+The [full config] can be found here](https://gofile.io/d/No9L9uvQ)
+
+### My day one rating
+Overall, a 10/10! I love keyboard-focused applications; it's much more
+intuitive and efficient than reaching for my mouse constantly.  Although it has
+a steep learning curve, the right configuration definitely helps. Brook's
+configuration made it much easier for me to jump in and learn all the keybinds.
+It is definitely worth it, and I highly recommend giving it a try :)
+
+In a month from today, I will post another blog update with more experience and see if my opinion has changed.
+
+Until then, happy coding 🤩
+
+![Vim Meme](/vimmeme.webp)
